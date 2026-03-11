@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"rel="stylesheet"/>
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="h-screen w-screen m-0 p-0 overflow-x-hidden">
+    <nav class="p-4 flex bg-gray-900 shadow-2xl justify-between items-center gap-2 sticky top-0">
+        <div>
+            <i class="ri-user-fill text-white"></i>
+            <span class="text-lg text-3xl text-white">Supriya Raj</span>
+        </div>
+        <div class="hidden md:flex gap-10 text-white">
+            <a href=""class="font-medium hover:text-sky-100
+            ">HOME</a>
+            <a href=""class="font-medium hover:text-sky-100
+            ">ABOUT</a>
+            <a href=""class="font-medium hover:text-sky-100
+            ">SERVICES</a>
+            <a href=""class="font-medium hover:text-sky-100
+            ">WORK</a>
+            <a href=""class="font-medium hover:text-sky-100
+            ">CERTIFICATES</a>
+        </div>
+        <button class="hidden md:block border-1 text-white rounded-lg py-3 px-6 p-2 hover:border-gray-400">
+            <a href="">Download CV</a>
+        </button>
+        <button class="p-4 md:hidden"onclick="handleMenu()">
+            <i class="ri-menu-line text-white"></i>
+        </button>
+        <div id="nav-dialog"class="fixed z-10 md:hidden bg-white inset-0 p-4">
+            <div class="flex justify-between">
+            <i class="ri-user-fill">
+            <span class="text-lg font-medium py-5">Supriya Raj</span>
+            </i>
+            <button class="p-4 md:hidden"onclick="handleMenu()">
+            <i class="ri-close-large-fill"></i>
+        </button>
+        </div>
+        <div class="p-3">
+            <a href=""class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">HOME</a>
+            <a href=""class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">ABOUT</a>
+            <a href=""class="font-medium m-3 p-3  hover:bg-gray-100 block rounded-lg">SERVICES</a>
+            <a href=""class="font-medium m-3 p-3  hover:bg-gray-100 block rounded-lg">WORK</a>
+            <a href=""class="font-medium m-3 p-3  hover:bg-gray-100 block rounded-lg">CERTIFICATES</a>
+            <button class="block flex border-1 rounded-lg py-2 px-6 ml-5 hover:border-gray-400">
+            <a href="">Download CV</a>
+        </button>
+        </div>
+        
+        </div>
+    </nav>
+    <section class="bg-gray-900 md:h-120 shadow-2xl py-12 md:py-25 gap-20 bg-[url()] bg-no-repeat bg-cover">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center justify-evenly gap-8 md:ml-30 ">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl text-shadow-lg md:text-5xl font-bold text-white mb-4">
+          Hello, I'm <span class="text-teal-600">Supriya Raj</span>
+        </h1>
+        <p class="text-lg text-shadow-lg text-white mb-6">
+         I am a passionate frontend developer with a strong interest in creating responsive and user-friendly websites. 
+        </p>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#contact" class="bg-teal-600 hover:bg-teal-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">
+            Contact me
+          </a>
+          <a href="#projects" class="bg-white hover:bg-gray-300 text-teal-900 border border-white font-bold py-3 px-6 rounded-lg transition duration-300">
+            View Project
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-8 md:mt-0 md:ml-20">
+        <img src="WhatsApp Imag.jpeg" alt="Your Name" class="mx-auto md:mx-0 w-74 h-74   md:max-w-md object-cover rounded-full shadow-2xl border-shadow-2xl">
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="bg-gray-700 h-350 md:h-180 py-15 md:py-25 gap-20">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-evenly gap-8">
+        <div class="md:w-1/2 mt-8 md:mt-5 md:ml-40">
+          <img src="download (6).png" alt="Your Name" class="mx-auto md:mx-0 w-74 h-94 md:h-120 md:max-w-md object-cover  rounded-lg shadow-2xl border-shadow-2xl">
+            
+        </div>
+        <div  class="md:w-150 text-center object-cover border-shadow-2xl">
+          <div class=" text-center place-content-center">
+          <h1 class="font-semibold md:mr-10">Introduction</h1>
+          <h1 class="font-bold  text-shadow-2xl text-teal-600 text-4xl md:mr-10 font-sans">About me</h1>
+          </div>
+          <div class="md:w-150 md:mr-100 overflow-x-hidden mx-5">
+          <p class="justify-center text-justify text-lg text-shadow-lg text-gray-300 p-5 ">My name is Supriya Raj. I am a B.Tech student in Computer Science and Engineering. I am passionate about web development and technology. I have knowledge of HTML, CSS, JavaScript, and Tailwind CSS, and I enjoy creating responsive and user-friendly websites. </p>
+          </div>
+          <div class="flex md:flex flex-col md:flex-row p-5 gap-7">
+            <div class="h-30 md:h-40 w-118 md:w-80  rounded-lg justify-center text-justify shadow-2xl border border-gray-600 hover:bg-gray-600 p-5 overflow-x-hidden mx-5">
+              <i class="ri-graduation-cap-fill text-white text-2xl"></i>
+              <h1 class="text-white font-bold ">Education</h1>
+              <p class="font-medium text-gray-300">B.Tech (Computer Science)</p>
+            </div>
+            <div class="h-30 md:h-40 w-118 md:w-80 justify-center text-justify shadow-2xl rounded-lg  border border-gray-600 hover:bg-gray-600 p-5  overflow-x-hidden mx-5">
+              <i class="ri-code-s-slash-line text-2xl text-white"></i>
+              <h1 class="text-white font-bold ">Languages</h1>
+              <p class="font-medium text-gray-300">HTML,CSS,  JavaScript</p>
+            </div>
+            <div class="h-30 md:h-40 w-118 md:w-70 border-shadow-2xl  justify-center text-justify shadow-2xl rounded-lg  border border-gray-600 hover:bg-gray-600 p-5  overflow-x-hidden mx-5">
+              <i class="ri-red-packet-fill text-2xl text-white"></i>
+               <h1 class="text-white font-bold ">Projects</h1>
+              <p class="font-medium text-gray-300">Built more than 10 projects</p>
+            </div>
+          </div>
+          <div class="place-content-center  md:mr-5">
+            <p class="pt-10 font-bold text-teal-600 text-2xl text-center">Tool i use</p>
+              </div>
+              <div class="md:mr-35 md:w-130 p-5">
+            <i class="ri-html5-fill text-6xl inline-block hover:scale-125 transform transition duration-200"></i>
+            <i class="ri-css3-fill text-6xl  inline-block hover:scale-125 transition duration-300"></i>
+            <i class="ri-javascript-fill text-6xl  inline-block hover:scale-125 transition duration-300"></i>
+            <a href="https://github.com/Dev-supriya03" target="_blank">
+            <i class="ri-github-fill text-6xl  inline-block hover:scale-125 transition duration-300"></i></a>
+            <a href="https://linkedin.com/in/supriya-raj-667021368" target="_blank">
+            <i class="ri-linkedin-box-fill text-6xl  inline-block hover:scale-125 transition duration-300"></i></a>
+            <a href="https://instagram.com/supriya_gupta203" target="_blank">
+            <i class="ri-instagram-fill text-6xl inline-block hover:scale-125 transition duration-300"></i></a>
+            <i class="ri-bootstrap-line text-6xl inline-block hover:scale-125 transition duration-300"></i>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-gray-900 h-330 md:h-140 shadow-2xl py-12 md:py-25 gap-20 bg-[url()] bg-no-repeat bg-cover">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col  items-center justify-evenly gap-8  ">
+      <div class="text-center">
+        <h1 class="text-teal-600 font-semibold">What i Offer</h1>
+        <p class="text-4xl text-white font-bold">My Services</p>
+        <p class="p-2 text-gray-300">I am a passionate frontend developer with a strong interest in creating responsive and user-friendly websites. </p>
+      </div>
+      <div class="flex flex-col md:flex-row items-center justify-evenly gap-8">
+      <div class="h-60 w-118 md:w-70 md:h-70 rounded-lg justify-center text-justify shadow-2xl border border-gray-700 hover:bg-gray-800 p-8 md:p-6 overflow-x-hidden mx-5">
+        <i class="ri-global-line text-4xl text-white"></i>
+        <h1 class="text-gray-100 font-bold text-2xl">Web Design</h1>
+        <p class="text-gray-300">Web design is the process of creating and arranging the visual layout, structure, and user experience of a website.</p>
+        <button class="text-gray-100 mt-5 ">Read More....</button>
+      </div>
+      <div class="h-60 w-118 md:w-70 md:h-70 rounded-lg bg-gray-900 shadow-2xl border border-gray-700 hover:bg-gray-800 p-8 overflow-x-hidden mx-5">
+        <i class="ri-smartphone-line text-4xl text-white"></i>
+        <h1 class="text-gray-100 font-bold text-2xl">Mobile App</h1>
+        <p class="text-gray-300">A mobile app (mobile application) is a software program designed to run on smartphones and tablets.</p>
+        <button class="text-gray-100 mt-5 ">Read More....</button>
+      </div>
+      
+      <div class="h-60 w-118 md:w-70 md:h-70 rounded-lg bg-gray-900 shadow-2xl border border-gray-700 hover:bg-gray-800 p-8 overflow-x-hidden mx-5">
+        <i class="ri-pencil-ai-2-fill text-4xl text-white"></i>
+        <h1 class="text-gray-100 font-bold text-2xl">UI/UX Design</h1>
+        <p class="text-gray-300">UI (User Interface) Design focuses on the look and layout of a product. It includes designing elements.</p>
+        <button class="text-gray-100 mt-5 ">Read More....</button>
+      </div>
+      <div class="h-60 w-118 md:w-70 md:h-70 rounded-lg bg-gray-900 shadow-2xl border border-gray-700 hover:bg-gray-800 p-5 overflow-x-hidden mx-5">
+        <i class="ri-folder-image-line text-4xl text-white"></i>
+        <h1 class="text-gray-100 font-bold text-2xl">Graphic Design</h1>
+        <p class="text-gray-300">Graphic Design is the art and practice of creating visual content to communicate ideas, messages, or information.</p>
+         <button class="text-gray-100 mt-5 ">Read More....</button>
+      </div>
+      </div>
+  </div>
+</section>
+<section class="bg-gray-900 h-330 md:h-220 shadow-2xl py-12 md:py-25 gap-20 bg-[url()] bg-no-repeat bg-cover">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col  items-center justify-evenly gap-8  ">
+      <div class="text-center">
+        <h1 class="text-white font-semibold text-4xl font-bold">My Work</h1>
+        <p class="text-gray-200">This is one of my latest web design projects. I designed and developed this website using HTML and Tailwind CSS.</p>
+      </div>
+      <div class="flex flex-col md:flex-wrap md:flex-row justify-evenly gap-8">
+        <div class="h-60 w-118 md:w-120 md:h-70 rounded-lg  bg-gray-900 shadow-2xl border border-gray-700 p-5 overflow-x-hidden">
+          <img src="Screenshot 2026-03-11 163617.png " alt="" class="h-[100%] w-[100%] overflow-hidden hover:scale-105 transition">
+        </div>
+        <div class="h-60 w-118 md:w-120 md:h-70 rounded-lg bg-gray-900 shadow-2xl border border-gray-700 p-5 overflow-x-hidden">
+          <img src="Screenshot 2026-03-11 163707.png" alt="" class="h-[100%] w-[100%] overflow-hidden hover:scale-105 transition">
+        </div>
+        <div class="h-60 w-118 md:w-120 md:h-70 rounded-lg bg-gray-900 shadow-2xl border border-gray-700 p-5  overflow-x-hidden">
+          <img src="Screenshot 2026-03-11 163823.png" alt="" class="h-[100%] w-[100%] overflow-hidden hover:scale-105 transition">
+        </div>
+        <div class="h-60 w-118 md:w-120 md:h-70 rounded-lg bg-gray-900 shadow-2xl border border-gray-700 p-5 overflow-x-hidden">
+          <img src="Screenshot 2026-03-11 163823.png" alt="" class="h-[100%] w-[100%] overflow-hidden hover:scale-105 transition">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
